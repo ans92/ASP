@@ -1,0 +1,40 @@
+---
+experiment:
+  name: asp/mitstates
+dataset:
+  data_dir: mit-states
+  dataset: mitstates
+  splitname: compositional-split-natural
+model_params:
+  model: asp
+  gumbel: false
+  partial: false
+  kbfile: /home/ans/CZSL/ASP/utils/mit_conceptnet.npy
+  dropout: true
+  norm: true
+  nlayers: 2
+  relu: false
+  fc_emb: 768,1024,1200
+  emb_dim: 300
+  emb_init: word2vec #ft+w2v #fasttext
+  image_extractor: resnet18
+  train_only: false
+  static_inp: false
+  input_dim: 300
+training:
+  batch_size: 256
+  eval_val_every: 30
+  load: 
+  lr: 5.0e-05
+  wd: 5.0e-05
+  lrg: 5.0e-6
+  max_epochs: 80
+  norm_family: imagenet
+  save_every: 10000
+  test_batch_size: 32
+  test_set: val
+  topk: 1
+  workers: 8
+  update_features: false
+  freeze_features: false
+
