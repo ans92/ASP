@@ -1,6 +1,6 @@
 import argparse
 
-DATA_FOLDER ="/home/ans/DATA_ROOT/"
+DATA_FOLDER ="DATA_ROOT/"
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
 parser.add_argument('--config', default='configs/args.yml', help='path of the config file (training only)')
