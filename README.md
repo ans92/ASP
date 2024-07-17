@@ -39,3 +39,6 @@ To test a model run the following command:
 python test.py --logpath LOG_DIR --open_world --fast
 ```
 ```LOG_DIR``` is a path where logs are stored during training.
+
+# Acknowledgement
+The project is based on [KG-SP](https://github.com/ExplainableML/KG-SP). Thanks for their awesome works.
