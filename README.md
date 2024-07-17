@@ -4,7 +4,7 @@ Here is the PyTorch code for our project ASP, Attention based Simple Primitives 
 
 ![asp diagram_V6](https://github.com/user-attachments/assets/80c11992-c186-4adb-836a-a49b3fc8e7e1)
 
-# Setup
+## Setup
 
 1. Clone the repo
 2. We suggest utilizing Anaconda for setting up the environment (It is not mandatory though). In order to establish the environment and activate it, please execute:
@@ -18,7 +18,7 @@ bash ./utils/download_data.sh DATA_ROOT
 mkdir logs
 ```
 
-# Training
+## Training
 
 To train the model, following command will be used:
 ```
@@ -32,7 +32,7 @@ python train.py --config configs/asp/mit.yml --open_world --fast
 ```
 Replace ```mit.yml``` with ```cgqa.yml``` or ```utzappos.yml``` for other two datasets.
 
-# Test
+## Test
 
 To test a model run the following command:
 ```
@@ -40,5 +40,5 @@ python test.py --logpath LOG_DIR --open_world --fast
 ```
 ```LOG_DIR``` is a path where logs are stored during training.
 
-# Acknowledgement
+## Acknowledgement
 The project is based on [KG-SP](https://github.com/ExplainableML/KG-SP). Thanks for their awesome works.
