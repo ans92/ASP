@@ -12,7 +12,7 @@ Here is the PyTorch code for our project ASP, Attention based Simple Primitives 
 conda env create --file environment.yml
 conda activate czsl
 ```
-3. Navigate to the cloned repository and launch a terminal. Obtain the datasets and embeddings, indicating the preferred location for storage (for example, using DATA_ROOT in this scenario).
+3. Navigate to the cloned repository and launch a terminal. Obtain the datasets and embeddings, indicating the preferred location for data storage (for example, using DATA_ROOT in this scenario. If you change the name DATA_ROOT to something else please change that name in flags.py line 3 as well. If you find any error regarding data folder, you may need to update full path of your data folder on line 3 in flags.py file).
 ```
 bash ./utils/download_data.sh DATA_ROOT
 mkdir logs
