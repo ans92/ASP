@@ -27,7 +27,7 @@ def get_norm_values(norm_family = 'imagenet'):
     return mean, std
 
 def save_args(args, log_path, argfile):
-    shutil.copy('/home/ans/CZSL/KG-SP-main/train.py', log_path)
+    shutil.copy('train.py', log_path)
     modelfiles = ospj(log_path, 'models')
     try:
         shutil.copy(argfile, log_path)
