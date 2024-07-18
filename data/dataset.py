@@ -160,19 +160,19 @@ class CompositionDataset(Dataset):
             candidates = [attr for (_, attr, obj) in self.train_data if obj==_obj]
             self.train_obj_affordance[_obj] = list(set(candidates))
 
-        if 'ut' in self.root:
-            fo=open('/home/ans/CZSL/KG-SP-main/utils/partial_utzappos_split.pkl', 'rb')
-            sample_mask = pickle.load(fo)
-        elif 'mit' in self.root:
-            fo=open('/home/ans/CZSL/KG-SP-main/utils/partial_mitstates_split.pkl', 'rb')
-            sample_mask = pickle.load(fo)
-        elif 'cgqa' in self.root:
-            fo = open('/home/ans/CZSL/KG-SP-main/utils/partial_cgqa_split.pkl', 'rb')
-            sample_mask = pickle.load(fo)
+        # if 'ut' in self.root:
+        #     fo=open('/home/ans/CZSL/KG-SP-main/utils/partial_utzappos_split.pkl', 'rb')
+        #     sample_mask = pickle.load(fo)
+        # elif 'mit' in self.root:
+        #     fo=open('/home/ans/CZSL/KG-SP-main/utils/partial_mitstates_split.pkl', 'rb')
+        #     sample_mask = pickle.load(fo)
+        # elif 'cgqa' in self.root:
+        #     fo = open('/home/ans/CZSL/KG-SP-main/utils/partial_cgqa_split.pkl', 'rb')
+        #     sample_mask = pickle.load(fo)
 
-        self.sample_mask = sample_mask
+        #self.sample_mask = sample_mask
         self.sample_indices = list(range(len(self.data)))
-        #self.sample_mask = [random.randint(0,1) for i in range(len(self.data))]
+        
         self.sample_pairs = self.train_pairs
 
         # Load based on what to output
@@ -395,8 +395,8 @@ class CompositionDataset(Dataset):
             img = self.loader(image)
             img = self.transform(img)
 
-        data = [img, self.attr2idx[attr], self.obj2idx[obj], self.pair2idx[(attr, obj)], self.sample_mask[index]]
-        
+        #data = [img, self.attr2idx[attr], self.obj2idx[obj], self.pair2idx[(attr, obj)], self.sample_mask[index]]
+        data = [img, self.attr2idx[attr], self.obj2idx[obj], self.pair2idx[(attr, obj)]]
         if self.phase == 'train':
             all_neg_attrs = []
             all_neg_objs = []
