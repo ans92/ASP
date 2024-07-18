@@ -2,7 +2,7 @@ import torch
 import torch.optim as optim
 
 from models.image_extractor import get_image_extractor
-from models.graph_method import GraphFull
+#from models.graph_method import GraphFull
 from models.asp import ASP
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
