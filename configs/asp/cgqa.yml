@@ -8,7 +8,7 @@ model_params:
   model: asp
   partial: false
   gumbel: false
-  kbfile: /home/ans/CZSL/ASP/utils/cgqa_conceptnet.npy
+  kbfile: utils/cgqa_conceptnet.npy
   pseudo: false
   dropout: true
   norm: true
@@ -25,13 +25,13 @@ model_params:
   static_inp: false
 training:
   batch_size: 256
-  eval_val_every: 3
+  eval_val_every: 2
   load:
   lr: 5.0e-05
   wd: 5.0e-05
   lrg: 5.0e-06
   margin: 2
-  max_epochs: 120
+  max_epochs: 80
   norm_family: imagenet
   save_every: 10000
   test_batch_size: 256
