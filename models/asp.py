@@ -28,7 +28,8 @@ class ASP(nn.Module):
             self.known_pairs = dset.train_pairs
             seen_pair_set = set(self.known_pairs)
             mask = [1 if pair in seen_pair_set else 0 for pair in dset.pairs]
-            self.seen_mask = torch.BoolTensor(mask).cuda() * 1.
+        #     self.seen_mask = torch.BoolTensor(mask).cuda() * 1.
+            self.seen_mask = torch.BoolTensor(mask).to(device) * 1.
 
         self.uniq_attrs, self.uniq_objs = torch.arange(len(self.dset.attrs)).long().to(device), \
                                           torch.arange(len(self.dset.objs)).long().to(device)
@@ -290,7 +291,7 @@ class ASP(nn.Module):
         
         
         
-        mask = torch.Tensor((np.array(self.feas_scores)>=th)*1.0).cuda()
+        mask = torch.Tensor((np.array(self.feas_scores)>=th)*1.0).to(device)
         score = score*mask + (1.-mask)*(-1.)
         scores = {}
         for itr, (attr, obj) in enumerate(self.dset.pairs):
