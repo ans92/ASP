@@ -35,7 +35,7 @@ def main():
     print(args)
 
     logpath = os.path.join(args.cv_dir, args.name)
-    os.makedirs(logpath, exist_ok=True)
+    os.makedirs(logpath, exist_ok=True);print(logpath)
     save_args(args, logpath, args.config)
     writer = SummaryWriter(log_dir = logpath, flush_secs = 30)
 
