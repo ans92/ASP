@@ -9,7 +9,7 @@ model_params:
   model: asp
   gumbel: false
   partial: false
-  kbfile: /home/ans/CZSL/ASP/utils/mit_conceptnet.npy
+  kbfile: utils/mit_conceptnet.npy
   dropout: true
   norm: true
   nlayers: 2
