@@ -9,7 +9,7 @@ model_params:
   model: asp
   partial: false
   gumbel: false
-  kbfile: /home/ans/CZSL/ASP/utils/zappos_conceptnet.npy
+  kbfile: utils/zappos_conceptnet.npy
   dropout: true
   norm: true
   nlayers: 2
@@ -25,13 +25,13 @@ model_params:
   input_dim: 300
 training:
   batch_size: 256
-  eval_val_every: 3
+  eval_val_every: 2
   load: 
   lr: 5.0e-05
   wd: 5.0e-05
   lrg: 5.0e-6
   margin: 0.5
-  max_epochs: 120
+  max_epochs: 6
   norm_family: imagenet
   save_every: 10000
   test_batch_size: 32
