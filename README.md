@@ -1,6 +1,6 @@
 # Attention based Simple Primitives
 
-Here is the PyTorch code for our paper ASP, **Attention based Simple Primitives for Open World Compositional Zero-Shot Learning**. The code includes the ASP method implementation on three datasets: UT-Zappos, MIT-States, and CGQA.
+Here is the PyTorch code for our paper ASP, **[Attention based Simple Primitives for Open World Compositional Zero-Shot Learning](https://arxiv.org/pdf/2407.13715)**. The code includes the ASP method implementation on three datasets: UT-Zappos, MIT-States, and CGQA.
 
 ### Abstract
 
@@ -57,3 +57,13 @@ python test.py --logpath LOG_DIR --open_world --fast
 
 ## Acknowledgement
 The project is based on [KG-SP](https://github.com/ExplainableML/KG-SP). Thanks for their awesome works.
+
+To cite our work:
+```
+@article{munir2024attention,
+  title={Attention Based Simple Primitives for Open World Compositional Zero-Shot Learning},
+  author={Munir, Ans and Qureshi, Faisal Z and Khan, Muhammad Haris and Ali, Mohsen},
+  journal={arXiv preprint arXiv:2407.13715},
+  year={2024}
+}
+```
