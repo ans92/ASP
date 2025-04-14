@@ -60,10 +60,12 @@ The project is based on [KG-SP](https://github.com/ExplainableML/KG-SP). Thanks 
 
 To cite our work:
 ```
-@article{munir2024attention,
-  title={Attention Based Simple Primitives for Open World Compositional Zero-Shot Learning},
+@inproceedings{munir2024attention,
+  title={Attention Based Simple Primitives for Open-World Compositional Zero-Shot Learning},
   author={Munir, Ans and Qureshi, Faisal Z and Khan, Muhammad Haris and Ali, Mohsen},
-  journal={arXiv preprint arXiv:2407.13715},
-  year={2024}
+  booktitle={2024 International Conference on Digital Image Computing: Techniques and Applications (DICTA)},
+  pages={714--721},
+  year={2024},
+  organization={IEEE}
 }
 ```
