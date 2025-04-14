@@ -55,8 +55,7 @@ python test.py --logpath LOG_DIR --open_world --fast
 ```
 ```LOG_DIR``` is a path where logs of dataset are stored during training. For example, in case of UT-Zappos dataset your LOG_DIR looks like ```logs/asp/utzappos/```
 
-## Acknowledgement
-The project is based on [KG-SP](https://github.com/ExplainableML/KG-SP). Thanks for their awesome works.
+## Citation
 
 To cite our work:
 ```
@@ -69,3 +68,6 @@ To cite our work:
   organization={IEEE}
 }
 ```
+
+## Acknowledgement
+The project is based on [KG-SP](https://github.com/ExplainableML/KG-SP). Thanks for their awesome works.
